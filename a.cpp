@@ -40,7 +40,11 @@ struct fast
         ios::sync_with_stdio(0);
     }
 } fast;
+string S;
 int main()
 {
-    cout << "Hello world!" << '\n';
+    cin >> S;
+    int i = stoi(S.substr(3, 3));
+    cout << i << '\n';
+    cout << (i >= 1 && i <= 349 && i != 316 ? "Yes\n" : "No\n");
 }
